@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Container } from '@/components/Container'
+import Head from "next/head"
+import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
+import { Container } from "@/components/Container"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
           <p className="text-gray-500 text-sm">Last updated November 7, 2022</p>
 
 
-          <p>This privacy notice for Cheers.li ('Company', 'we', 'us', or 'our', ), describes how and why we might collect, store, use, and/or share ( 'process') your information when you use our services ('Services'), such as when you:</p>
+          <p>This privacy notice for Cheers.li (`&apos;Company`&apos;, `&apos;we`&apos;, `&apos;us`&apos;, or `&apos;our`&apos;, ), describes how and why we might collect, store, use, and/or share ( `&apos;process`&apos;) your information when you use our services (`&apos;Services`&apos;), such as when you:</p>
 
           <ul className="list-disc px-5">
             <li>Download and use our mobile application (Cheers.li) , or any other application of ours that links to this privacy notice</li>
@@ -78,14 +78,14 @@ export default function Home() {
           </ul>
 
           <p><strong>Sensitive Information.</strong> We do not process sensitive information.</p>
-          <p><strong>Social Media Login Data.</strong>  We may provide you with the option to register with us using your existing social media account details, like your Facebook, Twitter, or other social media account. If you choose to register in this way, we will collect the information described in the section called 'How do we handle your social logins?' below.</p>
+          <p><strong>Social Media Login Data.</strong>  We may provide you with the option to register with us using your existing social media account details, like your Facebook, Twitter, or other social media account. If you choose to register in this way, we will collect the information described in the section called `&apos;How do we handle your social logins?`&apos; below.</p>
 
           <p><strong>Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:</p>
 
           <ul className="list-disc px-5">
-            <li>Geolocation Information. We may request access or permission to track location-based information from your mobile device, either continuously or while you are using our mobile application(s), to provide certain location-based services. If you wish to change our access or permissions, you may do so in your device's settings.</li>
-            <li>Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device's camera, and other features. If you wish to change our access or permissions, you may do so in your device's settings.</li>
-            <li>Push Notifications. We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.</li>
+            <li>Geolocation Information. We may request access or permission to track location-based information from your mobile device, either continuously or while you are using our mobile application(s), to provide certain location-based services. If you wish to change our access or permissions, you may do so in your device`&apos;s settings.</li>
+            <li>Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device`&apos;s camera, and other features. If you wish to change our access or permissions, you may do so in your device`&apos;s settings.</li>
+            <li>Push Notifications. We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device`&apos;s settings.</li>
           </ul>
 
           <p>This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.</p>
@@ -99,7 +99,7 @@ export default function Home() {
           <p>The information we collect includes:</p>
           <ul className="list-disc px-5">
             <li>Device Data. We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.</li>
-            <li>Location Data. We collect location data such as information about your device's location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.</li>
+            <li>Location Data. We collect location data such as information about your device`&apos;s location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.</li>
           </ul>
 
           <h2 className="text-xl font-bold" id="process">2. How do we process your information?</h2>
@@ -109,7 +109,7 @@ export default function Home() {
           <ul className="list-disc px-5">
             <li>To facilitate account creation and authentication and otherwise manage user accounts. We may process your information so you can create and log in to your account, as well as keep your account in working order.</li>
             <li>To enable user-to-user communications. We may process your information if you choose to use any of our offerings that allow for communication with another user.</li>
-            <li>To save or protect an individual's vital interest. We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.</li>
+            <li>To save or protect an individual`&apos;s vital interest. We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.</li>
           </ul>
 
 
@@ -165,7 +165,7 @@ export default function Home() {
           <h2 className="text-xl font-bold" id="time">6. How long do we keep your information?</h2>
           <p><strong>In Short: </strong>We keep your information for as long as necessary to fulfil the purposes outlined in this privacy notice unless otherwise required by law.</p>
 
-          <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than six (6) months past the termination of the user's account .</p>
+          <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than six (6) months past the termination of the user`&apos;s account .</p>
           <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymise such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
 
           <h2 className="text-xl font-bold" id="safe">7. How do we keep your information safe?</h2>
@@ -181,13 +181,13 @@ export default function Home() {
           <h2 className="text-xl font-bold" id="rights">9. What are your privacy rights?</h2>
           <p><strong>In Short: In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.</strong></p>
 
-          <p>In some regions (like the EEA, UK, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section 'How can you contact us about this notice' below.</p>
+          <p>In some regions (like the EEA, UK, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section `&apos;How can you contact us about this notice`&apos; below.</p>
 
           <p>We will consider and act upon any request in accordance with applicable data protection laws. If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: <a className="text-sky-700 underline" href="https://ec.europa.eu/newsroom/article29/items/612080">https://ec.europa.eu/newsroom/article29/items/612080</a>.</p>
 
           <p>If you are located in Switzerland, the contact details for the data protection authorities are available here: <a className="text-sky-700 underline" href="https://www.edoeb.admin.ch/edoeb/en/home.html">https://www.edoeb.admin.ch/edoeb/en/home.html</a>.</p>
 
-          <p>Withdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section 'How can you contact us about this notice?' below.</p>
+          <p>Withdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section `&apos;How can you contact us about this notice?`&apos; below.</p>
 
           <p>However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.</p>
 
@@ -202,24 +202,24 @@ export default function Home() {
           <p>If you have questions or comments about your privacy rights, you may email us at <a className="text-sky-700 underline" href="mailto:info@cheers.li">info@cheers.li</a>.</p>
 
           <h2 className="text-xl font-bold" id="do-not-track">10. Controls for do-not-track features</h2>
-          <p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ('DNT') feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognising and implementing DNT signals has been finalised. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</p>
+          <p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (`&apos;DNT`&apos;) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognising and implementing DNT signals has been finalised. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</p>
 
           <h2 className="text-xl font-bold" id="california">11. Do California residents have specific privacy rights?</h2>
           <p><strong>In Short: Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</strong></p>
 
-          <p>California Civil Code Section 1798.83, also known as the 'Shine The Light' law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.</p>
+          <p>California Civil Code Section 1798.83, also known as the `&apos;Shine The Light`&apos; law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.</p>
           <p>If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g. backups, etc.).</p>
 
           <h3 className="text-lg font-bold">CCPA Privacy Notice</h3>
 
-          <p>The California Code of Regulations defines a 'resident' as:</p>
+          <p>The California Code of Regulations defines a `&apos;resident`&apos; as:</p>
           <ul className="px-5 list-decimal">
             <li>every individual who is in the State of California for other than a temporary or transitory purpose and</li>
             <li>every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose</li>
           </ul>
 
-          <p>All other individuals are defined as 'non-residents'.</p>
-          <p>If this definition of 'resident' applies to you, we must adhere to certain rights and obligations regarding your personal information.</p>
+          <p>All other individuals are defined as `&apos;non-residents`&apos;.</p>
+          <p>If this definition of `&apos;resident`&apos; applies to you, we must adhere to certain rights and obligations regarding your personal information.</p>
 
           <p><strong>What categories of personal information do we collect?</strong></p>
           <p>We have collected the following categories of personal information in the past twelve (12) months:</p>
@@ -308,7 +308,7 @@ export default function Home() {
 
           <p><strong>Will your information be shared with anyone else?</strong></p>
           <p>We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Each service provider is a for-profit entity that processes the information on our behalf.</p>
-          <p>We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be 'selling' of your personal information.</p>
+          <p>We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be `&apos;selling`&apos; of your personal information.</p>
           <p>Cheers.li has not disclosed or sold any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. Cheers.li will not sell personal information in the future belonging to website visitors, users, and other consumers.</p>
 
           <p><strong>Your rights with respect to your personal data</strong></p>
@@ -351,7 +351,7 @@ export default function Home() {
           <h2 className="text-xl font-bold" id="update">12. Do we make updates to this notice?</h2>
           <p><strong>In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.</strong></p>
 
-          <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated 'Revised' date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
+          <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated `&apos;Revised`&apos; date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
 
           <h2 className="text-xl font-bold" id="contact">13. How can you contact us about this notice?</h2>
           <p>If you have questions or comments about this notice, you may email us at <a className="text-sky-700 underline" href="mailto:info@cheers.li">info@cheers.li</a>.</p>
