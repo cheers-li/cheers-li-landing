@@ -5,53 +5,44 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
-      answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+      question: 'Who can see my sessions?',
+      answer: 'Only your friends can see your sessions. If you do not have any friends yet in the app go to the friends page and send them a friendship request.',
     },
     {
-      question: 'Isn’t this insider trading?',
-      answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+      question: 'For what is the location permission required?',
+      answer: 'We save your location inside a session to let your friends know where you are. If you do not wish to share your location with your friends you can always choose to hide it when creating a session.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
-      answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
+      question: 'Can i plan a session in advance?',
+      answer: 'At this time it is not possible to plan sessions in advance. This feature will come soon so watch out for our release notes on the app store.',
     },
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
+      question: 'Why can’t I add any friends?',
+      answer: 'Try to log out and close the app before trying again. If the issue persists do not hesitate to contact us.',
     },
     {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
+      question: 'Who build Cheers.li?',
+      answer: 'We are a group of drinking enthusiasts that want to help others to socialize better and keep in touch with their friends.',
     },
     {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+      question: 'Aren’t there other apps that do exactly the same?',
+      answer: 'Yes, we are aware that there are other apps that provide similar features to cheers.li but we find that none of these apps can really deliver on the features we find important.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
-      answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+      question: 'I have a feature request, what can I do?',
+      answer: 'Reach out to us as soon as possible! We are always happy to get feedback from our users and receive new ideas.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
-      answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+      question: 'On which platforms can I use the app?',
+      answer: 'The app is developed to work on both IOS and Android. Go to the app store to see the listing and download the app.',
     },
     {
-      question: 'How do I become an insider?',
-      answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+      question: 'What data does cheers.li collect?',
+      answer: 'We do not collect any other personal data then your email address and we do not share these with any third party. In the privacy statement you will find out more about data exactly we collect.',
     },
   ],
 ]
@@ -74,7 +65,7 @@ export function Faqs() {
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
             <Link
-              href="mailto:info@example.com"
+              href="mailto:info@cheers.li"
               className="text-gray-900 underline"
             >
               reach out to us

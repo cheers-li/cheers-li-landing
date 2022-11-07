@@ -4,39 +4,33 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
-    description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+    name: 'Plan your session',
+    description: 'Share with your friends were you are about to go.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
-    description:
-      'Invest in different industries to find the most opportunities to win huge.',
+    name: 'Adventure History',
+    description: 'See where you and your friends have been in the past.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
-    description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+    name: 'Get notified in real-time',
+    description: 'Get notified about your friends activities within seconds.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
-    description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+    name: 'Profit from your friends',
+    description: 'See where the most popular locations are to spend time.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
-    description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+    name: 'No-Tracking Policy',
+    description: 'We do not share your data with any third party.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
-    description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+    name: 'Session tracking',
+    description: 'Watch back what you have done and how much you drank.',
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +190,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Now is the time to invest in your friendships.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            It is never too late to reach out to your friends and grab a drink together. No matter if it is a coffee or a beer, cheers.li has you covered.
           </p>
         </div>
         <ul

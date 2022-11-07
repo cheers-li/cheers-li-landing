@@ -8,41 +8,28 @@ import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import {
-  DiageoLogo,
-  LaravelLogo,
-  MirageLogo,
-  ReversableLogo,
-  StatamicLogo,
-  StaticKitLogo,
-  TransistorLogo,
-  TupleLogo,
-} from '@/components/StockLogos'
-
-const MotionAppScreenHeader = motion(AppScreen.Header)
-const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Share what and where you are drinking',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'Let your friends know what you are drinking and where you are so they can join you.',
     icon: DeviceUserIcon,
-    screen: InviteScreen,
+    screen: ShareScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Get notified of friends activities',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      'You are always up to date on what your friends are doing. If you want you can even join them.',
     icon: DeviceNotificationIcon,
-    screen: StocksScreen,
+    screen: NotificationScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'See activities on the map',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      'Want to know where people are right now? Check the map feature and discover the best places to be right now.',
     icon: DeviceTouchIcon,
-    screen: InvestScreen,
+    screen: ActivitiesScreen,
   },
 ]
 
@@ -124,232 +111,26 @@ function DeviceTouchIcon(props) {
   )
 }
 
-const headerAnimation = {
-  initial: { opacity: 0, transition: { duration: 0.3 } },
-  animate: { opacity: 1, transition: { duration: 0.3, delay: 0.3 } },
-  exit: { opacity: 0, transition: { duration: 0.3 } },
-}
-
-const maxZIndex = 2147483647
-
-const bodyVariantBackwards = {
-  opacity: 0.4,
-  scale: 0.8,
-  zIndex: 0,
-  filter: 'blur(4px)',
-  zIndex: 0,
-  transition: { duration: 0.4 },
-}
-
-const bodyVariantForwards = (custom) => ({
-  y: '100%',
-  zIndex: maxZIndex - custom.changeCount,
-  transition: { duration: 0.4 },
-})
-
-const bodyAnimation = {
-  initial: 'initial',
-  animate: 'animate',
-  exit: 'exit',
-  variants: {
-    initial: (custom) =>
-      custom.isForwards ? bodyVariantForwards(custom) : bodyVariantBackwards,
-    animate: (custom) => ({
-      y: '0%',
-      opacity: 1,
-      scale: 1,
-      zIndex: maxZIndex / 2 - custom.changeCount,
-      filter: 'blur(0px)',
-      transition: { duration: 0.4 },
-    }),
-    exit: (custom) =>
-      custom.isForwards ? bodyVariantBackwards : bodyVariantForwards(custom),
-  },
-}
-
-function InviteScreen({ custom, animated = false }) {
+function ShareScreen() {
   return (
     <AppScreen className="w-full">
-      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Invite people</AppScreen.Title>
-        <AppScreen.Subtitle>
-          Get tips <span className="text-white">5s sooner</span> for every
-          invite.
-        </AppScreen.Subtitle>
-      </MotionAppScreenHeader>
-      <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="px-4 py-6">
-          <div className="space-y-6">
-            {[
-              { label: 'Full name', value: 'Albert H. Wiggin' },
-              { label: 'Email address', value: 'awiggin@chase.com' },
-            ].map((field) => (
-              <div key={field.label}>
-                <div className="text-sm text-gray-500">{field.label}</div>
-                <div className="mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900">
-                  {field.value}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-            Invite person
-          </div>
-        </div>
-      </MotionAppScreenBody>
+
     </AppScreen>
   )
 }
 
-function StocksScreen({ custom, animated = false }) {
+function NotificationScreen() {
   return (
     <AppScreen className="w-full">
-      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Stocks</AppScreen.Title>
-        <AppScreen.Subtitle>March 9, 2022</AppScreen.Subtitle>
-      </MotionAppScreenHeader>
-      <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="divide-y divide-gray-100">
-          {[
-            {
-              name: 'Laravel',
-              price: '4,098.01',
-              change: '+4.98%',
-              color: '#F9322C',
-              logo: LaravelLogo,
-            },
-            {
-              name: 'Tuple',
-              price: '5,451.10',
-              change: '-3.38%',
-              color: '#5A67D8',
-              logo: TupleLogo,
-            },
-            {
-              name: 'Transistor',
-              price: '4,098.41',
-              change: '+6.25%',
-              color: '#2A5B94',
-              logo: TransistorLogo,
-            },
-            {
-              name: 'Diageo',
-              price: '250.65',
-              change: '+1.25%',
-              color: '#3320A7',
-              logo: DiageoLogo,
-            },
-            {
-              name: 'StaticKit',
-              price: '250.65',
-              change: '-3.38%',
-              color: '#2A3034',
-              logo: StaticKitLogo,
-            },
-            {
-              name: 'Statamic',
-              price: '5,040.85',
-              change: '-3.11%',
-              color: '#0EA5E9',
-              logo: StatamicLogo,
-            },
-            {
-              name: 'Mirage',
-              price: '140.44',
-              change: '+9.09%',
-              color: '#16A34A',
-              logo: MirageLogo,
-            },
-            {
-              name: 'Reversable',
-              price: '550.60',
-              change: '-1.25%',
-              color: '#8D8D8D',
-              logo: ReversableLogo,
-            },
-          ].map((stock) => (
-            <div key={stock.name} className="flex items-center gap-4 px-4 py-3">
-              <div
-                className="flex-none rounded-full"
-                style={{ backgroundColor: stock.color }}
-              >
-                <stock.logo className="h-10 w-10" />
-              </div>
-              <div className="flex-auto text-sm text-gray-900">
-                {stock.name}
-              </div>
-              <div className="flex-none text-right">
-                <div className="text-sm font-medium text-gray-900">
-                  {stock.price}
-                </div>
-                <div
-                  className={clsx(
-                    'text-xs leading-5',
-                    stock.change.startsWith('+')
-                      ? 'text-cyan-500'
-                      : 'text-gray-500'
-                  )}
-                >
-                  {stock.change}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </MotionAppScreenBody>
+
     </AppScreen>
   )
 }
 
-function InvestScreen({ custom, animated = false }) {
+function ActivitiesScreen() {
   return (
     <AppScreen className="w-full">
-      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Buy $LA</AppScreen.Title>
-        <AppScreen.Subtitle>
-          <span className="text-white">$34.28</span> per share
-        </AppScreen.Subtitle>
-      </MotionAppScreenHeader>
-      <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="px-4 py-6">
-          <div className="space-y-4">
-            {[
-              { label: 'Number of shares', value: '100' },
-              {
-                label: 'Current market price',
-                value: (
-                  <div className="flex">
-                    $34.28
-                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                      <path
-                        d="M17 15V7H9M17 7 7 17"
-                        stroke="#06B6D4"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                ),
-              },
-              { label: 'Estimated cost', value: '$3,428.00' },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex justify-between border-b border-gray-100 pb-4"
-              >
-                <div className="text-sm text-gray-500">{item.label}</div>
-                <div className="text-sm font-semibold text-gray-900">
-                  {item.value}
-                </div>
-              </div>
-            ))}
-            <div className="rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-              Buy shares
-            </div>
-          </div>
-        </div>
-      </MotionAppScreenBody>
+
     </AppScreen>
   )
 }
@@ -549,13 +330,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Every feature you need to win. Try it for yourself.
+            See what we have to offer
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+            We provide numerous features to help you keep in touch with your friends.
           </p>
         </div>
       </Container>
